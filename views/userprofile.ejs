@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link href="/css/style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<div class="dp_container">
+    <div class="dp_logout">
+        <a href="/logout">Logout</a>
+    </div>
+    <h1>Profile page for user "<%= userid %>"</h1>
+    <input type="hidden" id="dp_userprofile_userid" value="<%= userid %>"/>
+    <div id="dp_userprofile" class="">
+        <div class="dp_userprofile" id="dp_userprofile_initial"><%= userprofile %></div>
+        <a href="#" id="dp_edit_userprofile_button" class="dp_button" role="button">Edit profile</a>
+    </div>
+    <form method="post" id="dp_userprofile_form" class="dp_login_form update_profile">
+        <textarea class="dp_input textarea" id="dp_new_userprofile" name="dp_new_userprofile" placeholder="Enter Your profile text"><%= userprofile %></textarea>
+        <div class="dp_updateprofile_block">
+            <a href="#" id="dp_update_userprofile_button" class="dp_button inline" role="button">Update</a>
+            <a href="#" id="dp_cancel_userprofile" class="dp_link inline">Cancel</a>
+        </div>
+    </form>
+</div>
+<script src="/js/userprofile.js"></script>
+</body>
+</html>

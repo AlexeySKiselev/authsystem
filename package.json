@@ -1,0 +1,25 @@
+{
+  "name": "digital-pill-test-app",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": {
+    "name": "Alexey S. Kiselev",
+    "email": "alexeys.kiselev@yahoo.com"
+  },
+  "description": "Digitall Pill Test App for Alexey S. Kiselev",
+  "repository": "",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.17.2",
+    "connect-mongo": "^1.3.2",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.6",
+    "express": "^4.15.3",
+    "express-session": "^1.15.3",
+    "mongoose": "^4.10.7",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0"
+  }
+}

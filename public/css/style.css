@@ -1,0 +1,160 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #fff;
+    font-size: 14px;
+    color: #000;
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+.dp_container {
+    display: block;
+    width: 600px;
+    margin: 0 auto;
+    height: 100%;
+    background-color: #fff;
+}
+
+.dp_error {
+    color: red;
+    font-weight: 700;
+}
+
+.dp_button {
+    display: block;
+    margin: 15px auto;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+    background-color: #2a547f;
+    width: fit-content;
+    padding: 0 30px;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+.dp_button:hover {
+    background-color: #3c647f;
+}
+
+.dp_button:active {
+    position: relative;
+    top: 2px;
+}
+
+.dp_login_form {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 20px auto;
+}
+
+.dp_input {
+    display: block;
+    border: 1px solid #000;
+    padding-left: 5px;
+    margin: 15px auto;
+    width: 300px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+.dp_input.textarea {
+    height: 120px;
+    font-family: Arial;
+}
+
+.dp_link {
+    display: block;
+    text-decoration: underline;
+    width: fit-content;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 16px;
+    color: #888;
+}
+
+.dp_error_box {
+    display: none;
+    width: 300px;
+    margin: 10px auto;
+    border: 1px solid red;
+    background-color: rgba(255,0,0,.2);
+    color: #000;
+    text-align: center;
+    padding: 11px 10px;
+    height: 40px;
+    font-size: 16px;
+}
+
+.dp_show {
+    display: block !important;
+}
+
+.dp_hide {
+    display: none !important;
+}
+
+.dp_register_already {
+    display: none;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin: 10px auto 0;
+}
+
+.dp_information {
+    display: block;
+    color: green;
+    font-size: 18px;
+    text-align: center;
+}
+
+.dp_logout {
+    display: block;
+    width: 100%;
+    height: 20px;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.dp_logout > a {
+    float: right;
+}
+
+.dp_button.inline, .dp_link.inline {
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.dp_updateprofile_block {
+    display: block;
+    text-align: center;
+}
+
+.dp_login_form.update_profile {
+    display: none;
+}

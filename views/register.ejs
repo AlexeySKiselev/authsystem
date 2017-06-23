@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link href="/css/style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<div id="dp_container" class="dp_container">
+    <h1><%= title %></h1>
+    <div class="dp_register_already" id="dp_register_success">
+        <div class="dp_information">
+            Success! You will redirect to Your profile page after 5 seconds...
+        </div>
+    </div>
+    <div class="dp_register_already" id="dp_register_already">
+        <div class="dp_information">
+            User with login "<span id="dp_already_userid"></span>" is already exists
+        </div>
+        <div class="dp_information" style="color: #000;">
+            Please, register with other username
+        </div>
+    </div>
+    <form method="post" id="dp_register_form" class="dp_login_form">
+        <div id="dp_error_box" class="dp_error_box">
+            Error! Enter Your <span id="dp_login_error"></span>
+        </div>
+        <input type="text" class="dp_input login" id="dp_new_login_input" name="dp_new_login_input" value="" placeholder="Enter Your login"/>
+        <input type="password" class="dp_input password" id="dp_new_password_input" name="dp_new_password_input" value="" placeholder="Enter Your password">
+        <div id="dp_error_confirm_box" class="dp_error_box">
+            Error! Re-enter correct password
+        </div>
+        <input type="password" class="dp_input password" id="dp_new_again_password_input" name="dp_new_again_password_input" value="" placeholder="Confirm Your password">
+        <textarea class="dp_input textarea" id="dp_new_userprofile" name="dp_new_userprofile" placeholder="Enter Your profile text"></textarea>
+        <a href="#" id="dp_register_button" class="dp_button" role="button">Register</a>
+    </form>
+</div>
+<script src="/js/register.js"></script>
+</body>
+</html>
